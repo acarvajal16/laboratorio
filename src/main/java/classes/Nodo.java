@@ -8,7 +8,7 @@ package classes;
 
 /**
  *
- * @author Administrador
+ * @author acarvajal16
  */
 public class Nodo {
     
@@ -34,6 +34,12 @@ public class Nodo {
 
     public void setNext(Nodo next) {
         this.next = next;
+    }
+    
+    public String mostrarInfomacion(){
+        
+        return null;
+        
     }
 
     

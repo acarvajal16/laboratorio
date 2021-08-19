@@ -8,7 +8,7 @@ package classes;
 
 /**
  *
- * @author Administrador
+ * @author acarvaja116
  */
 public class ListaEstudiantes implements IListaEnlazada {
     
@@ -39,7 +39,40 @@ public class ListaEstudiantes implements IListaEnlazada {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    
+    @Override
+    public void agregar (Nodo n){
+        
+    }
+    @Override
+    public Nodo buscarPorIndice(int indice){
+        
+        return null;
+        
+    }
+    @Override
+    public void eliminarPorIndice(int indice){
+        
+    }
+    @Override
+    public Nodo obtenerPrimero(){
+        
+    }
+    @Override
+    public Nodo obtenerUltimo(){
+        
+    }
+    @Override
+    public void eliminarPrimero(){
+        
+    }
+    @Override
+    public void eliminarUltimo(){
+        
+    }
+    @Override
+    public void vaciar(){
+        
+    }
     
             
 

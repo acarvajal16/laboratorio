@@ -8,7 +8,7 @@ package classes;
 
 /**
  *
- * @author Administrador
+ * @author acarvajal16
  */
 public class Estudiante {
     
