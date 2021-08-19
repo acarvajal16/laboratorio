@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package labpackages;
+package classes;
 
 /**
  *
  * @author Administrador
  */
-public class ListaEstudiantes {
+public class ListaEstudiantes implements IListaEnlazada {
     
     private Nodo primero;
     private Nodo ultimo;
@@ -39,6 +39,8 @@ public class ListaEstudiantes {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+    
+    
             
 
 }
