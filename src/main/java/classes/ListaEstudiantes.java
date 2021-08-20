@@ -6,6 +6,9 @@
 
 package classes;
 
+
+import static javax.management.Query.value;
+
 /**
  *
  * @author acarvaja116
@@ -40,8 +43,14 @@ public class ListaEstudiantes implements IListaEnlazada {
         this.cantidad = cantidad;
     }
     @Override
-    public void agregar (Nodo n){
+    public void agregar (Nodo nuevo){
         
+      if(primero == null){
+          
+          primero.setNext(Estudiante nuevo);
+          
+      }
+      
     }
     @Override
     public Nodo buscarPorIndice(int indice){
@@ -56,9 +65,13 @@ public class ListaEstudiantes implements IListaEnlazada {
     @Override
     public Nodo obtenerPrimero(){
         
+        return null;
+        
     }
     @Override
     public Nodo obtenerUltimo(){
+        
+        return null;
         
     }
     @Override

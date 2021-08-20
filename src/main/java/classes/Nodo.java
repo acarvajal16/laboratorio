@@ -37,9 +37,29 @@ public class Nodo {
     }
     
     public String mostrarInfomacion(){
+        Nodo actual = (Nodo) getPrimero();
+
+        if (getPrimero() != null) {
+            do {
+                System.out.println("* " + actual.getValue());
+                actual = actual.getNext();
+
+            } while (actual != null);
+        } else {
+            System.out.println("La lista está vacía.");
+        }
         
+        System.out.println("getEstudiante"+"Nodo getNext");
         return null;
         
+    }
+
+    private Object getPrimero() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String getValue() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     
