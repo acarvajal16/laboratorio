@@ -8,6 +8,9 @@ package classes;
 
 
 import static javax.management.Query.value;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -18,6 +21,7 @@ public class ListaEstudiantes implements IListaEnlazada {
     private Nodo primero;
     private Nodo ultimo;
     private int cantidad;
+    private Nodo value;
 
     public Nodo getPrimero() {
         return primero;
@@ -46,15 +50,22 @@ public class ListaEstudiantes implements IListaEnlazada {
     public void agregar (Nodo nuevo){
         
       if(primero == null){
-          
-          primero.setNext(Estudiante nuevo);
-          
+          Nodo Estudiante = null;
+          Nodo Nodo = value;
+          primero= Nodo;
+          primero.setNext(Estudiante);
+     
+      }else{
+          ultimo.setNext(nuevo);
+          ultimo = nuevo;
       }
+      
+      this.cantidad++;
       
     }
     @Override
     public Nodo buscarPorIndice(int indice){
-        
+        //ListaEstudiantes< listaenlazada = new ListaEstudiantes <String>();
         return null;
         
     }
@@ -65,7 +76,10 @@ public class ListaEstudiantes implements IListaEnlazada {
     @Override
     public Nodo obtenerPrimero(){
         
+        if (primero==null)
+            return null;
         return null;
+        
         
     }
     @Override
@@ -84,6 +98,7 @@ public class ListaEstudiantes implements IListaEnlazada {
     }
     @Override
     public void vaciar(){
+        primero= null;
         
     }
     
